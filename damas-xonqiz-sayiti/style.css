@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #226644;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #3ba169;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #2e8b57;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+.driver-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.driver-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.driver-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.routes-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.routes-table th,
+.routes-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.routes-table thead {
+  background-color: #2e8b57;
+  color: white;
+}
+
+.routes-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.contact-driver {
+  background-color: #eefaf1;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-left: 5px solid #2e8b57;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.telegram-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+/* === Responsive dizayn === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .driver-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .driver-card {
+    width: 90%;
+  }
+
+  .routes-table {
+    font-size: 14px;
+  }
+
+  .contact-driver {
+    width: 95%;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .banner img {
+    max-height: 250px;
+  }
+}
